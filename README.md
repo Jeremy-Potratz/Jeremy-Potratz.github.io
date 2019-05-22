@@ -8,3 +8,8 @@ Things contained in my website
   -Interesting tid bits
   -A picture maybe
   -hello to mr briody
+  -Get in touch portion
+      -number
+      -email
+      -social medias
+      -send a message to my databse? with their email and name
