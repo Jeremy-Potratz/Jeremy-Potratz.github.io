@@ -4,15 +4,15 @@
     <p>
       Jeremy's Resume Website
     </p>
-    <pdf src="http://sunny.freeservers.com/flowers.pdf">PDF</pdf>
+    <a href="./res.pdf" target="_blank" download="./res.pdf">Download My Resume!</a>
+    <pdf src="./res.pdf" width="50%" height="50%"></pdf>
   </div>
 </template>
 
 <script>
 import pdf from 'vue-pdf'
-import 'pdfjs-dist/build/pdf'
 
-export default {
+export default { 
   name: 'Home',
   props: {
     msg: String
