@@ -3,6 +3,17 @@
     <p>
       Personal
     </p>
+    <p>
+      Name- Jeremy Otto Potratz
+      <br><br>
+      Likes- Long walks on the beach, programming at 2 AM, Super Smash Brothers Melee
+      <br><br>
+      If I was stranded on a desert island and I had to bring 3...
+      <br>
+      Books- A Feast For Crows, When Scientific Progress Goes Boink, On the Far Side of the Mountain
+      <br>
+      Movies- Ineption, Inglorious Basterds, The Other Guys
+    </p>
   </div>
 </template>
 

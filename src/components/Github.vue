@@ -1,9 +1,13 @@
 <template>
   <div class="Github">
     <p>
-      Github! Here is the code for this website LINK
+      Github!
     </p>
     <a href="https://www.github.com/Jeremy-Potratz" target="_blank">Want to see my Github?</a>
+    <br>
+    <a href="https://github.com/Jeremy-Potratz/Processing/tree/master/Boids" target="_blank">One of my favorite Github projects</a>
+    <br>
+    <a href="https://github.com/Jeremy-Potratz/Jeremy-Potratz.github.io" target="_blank">Here is the code for this website</a>
   </div>
 </template>
 

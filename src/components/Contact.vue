@@ -3,6 +3,9 @@
     <p>
       Contact Me
     </p>
+    <p>Cell Phone Number - (847)-287-1637</p>
+    <p>Email - jpotrat@purdue.edu</p>
+    <a href="https://www.linkedin.com/in/jeremy-potratz-aa9217177/" target="_blank">Linked In</a>
   </div>
 </template>
 
