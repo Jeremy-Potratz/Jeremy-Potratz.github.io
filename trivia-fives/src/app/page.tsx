@@ -7,30 +7,30 @@ export default function Home() {
 
     const hints = [
         {
-            hintText: "Guard",
+            hintText: "Point Guard",
             isShown: true
         },
         {
-          hintText: "Made 1172 3's in his NBA Career",
+          hintText: "Number 10 high school recruit in the nation in 2012",
           isShown: false
         },
         {
-            hintText: "Drafted out of Kansas in 2003",
+            hintText: "Drafted by the Boston Celtics",
             isShown: false
         },
         {
-          hintText: "4th in RoTY voting in 2003-04",
+          hintText: "2021-22 Defensive Player of the year",
           isShown: false
         },
         {
-          hintText: "Played for the Bulls, Wizards, and Hawks",
+          hintText: "Traded to the Grizzles in 2023",
           isShown: false
         }
       ];
 
   return (
     <main className="p-10 w-full">
-      <TriviaBox propHints={hints} sportName='Basketball' answer='Kirk Hinrich'/>
+      <TriviaBox propHints={hints} sportName='Basketball' answer='Marcus Smart'/>
     </main>
   );
 }

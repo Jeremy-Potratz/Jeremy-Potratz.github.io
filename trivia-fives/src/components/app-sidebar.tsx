@@ -1,4 +1,4 @@
-import { BookText, Box, Badge } from "lucide-react"
+import { BookText, Box, Badge, Circle, CircleSlashedIcon } from "lucide-react"
 
 import {
   Sidebar,
@@ -21,12 +21,17 @@ const items = [
   {
     title: "Tennis",
     url: "/tennis",
-    icon: Badge,
+    icon: CircleSlashedIcon,
   },
   {
     title: "Football",
     url: "/football",
     icon: Box,
+  },
+  {
+    title: "Hockey",
+    url: "/hockey",
+    icon: Circle,
   },
 ]
 

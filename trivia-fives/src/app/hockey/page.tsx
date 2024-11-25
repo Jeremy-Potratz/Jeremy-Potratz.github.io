@@ -8,30 +8,30 @@ export default function Home() {
 
     const hints = [
         {
-            hintText: "Swedish",
+            hintText: "Canadian",
             isShown: true
         },
         {
-            hintText: "Won Wimbledon five times",
+            hintText: "Drafted in 2006",
             isShown: false
         },
         {
-            hintText: "First man in the Open Era to win 11 Grand Slam singles titles",
+            hintText: "Played Center",
             isShown: false
         },
         {
-            hintText: "ATP Player of the Year from 1976 to 1980",
+            hintText: "One of the few members of the Triple Gold Club (Won Stanley Cup, Olympic Gold, and World Championchip Gold Metal)",
             isShown: false
         },
         {
-            hintText: "First and last name begin with the same letter",
+            hintText: "Won 3 Stanley Cups with the Chicago Blackhawks",
             isShown: false
         }
       ];
 
   return (
     <main className="p-10 w-full">
-      <TriviaBox propHints={hints} sportName='Tennis' answer='Bjorn Borg'/>
+      <TriviaBox propHints={hints} sportName='Hockey' answer='Jonathan Toews'/>
     </main>
   );
 }

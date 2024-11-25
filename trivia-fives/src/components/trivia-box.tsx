@@ -37,6 +37,7 @@ export default function TriviaBox(props : TriviaBoxProps) {
 
  const answer = props.answer;
 
+ const[numGuesses, setnumGuesses] = useState(0);
  const[doneGuessing, setDoneGuessing] = useState(false);
  const[guessingLabel, setguessingLabel] = useState("");
  const[gotTheAnswer, setGotTheAnswer] = useState<boolean>();
@@ -52,6 +53,8 @@ export default function TriviaBox(props : TriviaBoxProps) {
   })
  
   function onSubmit(values: z.infer<typeof formSchema>) {
+    setnumGuesses(numGuesses + 1);
+    console.log(numGuesses);
     if(values.playerGuess.toLowerCase() == answer.toLowerCase()){
       setguessingLabel("You got the answer correct, go send it in slack");
       setGotTheAnswer(true);
@@ -83,6 +86,19 @@ export default function TriviaBox(props : TriviaBoxProps) {
     }
   }
 
+  function copyToClipboard() {
+    console.log(numGuesses);
+
+    if(gotTheAnswer){
+      let copyText = "I solved the " + props.sportName + " trivia in " + numGuesses + (numGuesses == 1 ? " guess" : " guesses");
+
+      navigator.clipboard.writeText(copyText);
+    } else {
+      navigator.clipboard.writeText("I didn't get the answer right for " + props.sportName + " trivia :(");
+    }
+  }
+
+
   return (
     <main className="w-full">
       <h1 className="text-3xl font-bold text-foreground">{props.sportName} Trivia in 5</h1>
@@ -103,6 +119,10 @@ export default function TriviaBox(props : TriviaBoxProps) {
                 </div>
             ))}
             <img hidden={!gotTheAnswer} src={logo.src} alt="loading..." />
+            <div hidden={!gotTheAnswer && !doneGuessing}>
+              <Button onClick={copyToClipboard}>Copy My Stats</Button>
+            </div>
+
             <Form {...form}>
               <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
                 <FormField
